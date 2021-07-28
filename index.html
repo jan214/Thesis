@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<header>
+	<title>Thesis</title>
+	<link rel="stylesheet" href="thesis.css">
+</header>
+<body>
+	<canvas id="cvs" width="800" height="600"></canvas>
+	Amount of Particles<input id="amount" type="number" min="1" value="10">
+	Lifetime<input id="lifetime" onchange="changeLifetime()" type="number" min="1" value="10">
+	Color<input id="color" onchange="changeColor()" type="color">
+	<p><select id="ps" size="1" onchange="switchPS()"></select></p>
+	<button id="newPS" onclick="newPS()">new Particle System</button>
+	<button id="delPS" onclick="deletePS()">Delete Particle System</button>
+	<div>Emitter Type: <select id="emitter" onchange="switchEmitter()"><option value="0">Box</option><option value="1">Cylinder</option><option value="2">Sphere</option></select></div>
+	<div id="renderTime"></div>
+	<script src="Particle.js"></script>
+	<script src="ParticleSystem.js"></script>
+	<script src="main.js"></script>
+
+<!--<iframe src="https://onedrive.live.com/embed?cid=12D7DB22096499BF&amp;resid=12D7DB22096499BF%21622&amp;authkey=AHjDWyxVEQnGU_g&amp;em=2&amp;wdStartOn=1" width="600px" height="580px" frameborder="0">Dies ist ein eingebettetes <a target="_blank" href="https://office.com">Microsoft Office</a>-Dokument, unterstützt von <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>-->
+
+	<div>Mouse Left click and hold to rotate</div>
+	<div>Mouse Wheel to zoom in/out</div>
+</body>
+</html>
